@@ -35,12 +35,34 @@ export function ContactSection() {
     try {
       console.log('Starting email submission...')
       
-      // Use hardcoded values directly
+      // Check if EmailJS is configured
       const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || ''
       const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || ''
       const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
       
       console.log('EmailJS Config:', { serviceId, templateId, publicKey })
+      
+      // If EmailJS is not configured, fall back to mailto
+      if (!serviceId || !templateId || !publicKey) {
+        console.log('EmailJS not configured, falling back to mailto...')
+        const subject = encodeURIComponent(`Portfolio Contact: Message from ${formData.from_name}`)
+        const body = encodeURIComponent(
+          `Name: ${formData.from_name}\n` +
+          `Email: ${formData.from_email}\n\n` +
+          `Message:\n${formData.message}`
+        )
+        const mailtoUrl = `mailto:${CONTACT_INFO.EMAIL}?subject=${subject}&body=${body}`
+        
+        window.location.href = mailtoUrl
+        
+        setIsSubmitting(false)
+        setIsSubmitted(true)
+        setFormData({ from_name: '', from_email: '', message: '' })
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => setIsSubmitted(false), 5000)
+        return
+      }
       
       const templateParams = {
         from_name: formData.from_name,
@@ -71,8 +93,20 @@ export function ContactSection() {
       })
       setIsSubmitting(false)
       
-      // Show more specific error to user
-      alert(`Failed to send email: ${error?.message || 'Unknown error'}. Please try again or contact me directly at ${CONTACT_INFO.EMAIL}`)
+      // Fallback to mailto on error
+      console.log('EmailJS failed, falling back to mailto...')
+      const subject = encodeURIComponent(`Portfolio Contact: Message from ${formData.from_name}`)
+      const body = encodeURIComponent(
+        `Name: ${formData.from_name}\n` +
+        `Email: ${formData.from_email}\n\n` +
+        `Message:\n${formData.message}`
+      )
+      const mailtoUrl = `mailto:${CONTACT_INFO.EMAIL}?subject=${subject}&body=${body}`
+      
+      window.location.href = mailtoUrl
+      
+      // Show user-friendly message
+      alert(`Your email client should open with a pre-filled message. If it doesn't open automatically, please email me directly at ${CONTACT_INFO.EMAIL}`)
     }
   }
 
