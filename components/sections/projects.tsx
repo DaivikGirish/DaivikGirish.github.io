@@ -15,30 +15,20 @@ const projectImages = {
 export function ProjectsSection() {
   const projects = [
     {
-      title: "IoT Temperature & Humidity Dashboard",
-      description: "Real-time monitoring system using ESP8266 and DHT22 sensors with web-based dashboard for data visualization and alerts.",
-      technologies: ["ESP8266", "DHT22", "Node.js", "React", "MongoDB", "WebSocket"],
-      github: "https://github.com/DaivikGirish/iot-dashboard",
-      demo: null,
-      icon: Cpu,
-      category: "IoT & Embedded",
-      image: projectImages["iot-dashboard"]
-    },
-    {
-      title: "Java Servlet ATM System",
-      description: "Full-stack ATM banking system with secure authentication, transaction management, and real-time balance updates.",
-      technologies: ["Java", "Servlets", "JSP", "MySQL", "HTML/CSS", "JavaScript"],
-      github: "https://github.com/DaivikGirish/atm-system",
+      title: "SAP CAPM Application",
+      description: "Enterprise-grade SAP Fiori application for business process management with responsive UI and backend integration.",
+      technologies: ["SAP UI5", "Fiori", "JavaScript", "OData", "SAP BTP", "ABAP"],
+      github: null,
       demo: null,
       icon: Database,
-      category: "Web Development",
-      image: projectImages["atm-system"]
+      category: "Enterprise",
+      image: projectImages["sap-fiori"]
     },
     {
       title: "Image Camouflaging using Genetic Algorithm",
       description: "Advanced image processing system that uses genetic algorithms to create optimal camouflage patterns for military applications.",
       technologies: ["Python", "OpenCV", "NumPy", "Genetic Algorithm", "Image Processing"],
-      github: "https://github.com/DaivikGirish/image-camouflage",
+      github: "https://github.com/DaivikGirish/Image_Camouflage_GeneticAlgorithm",
       demo: null,
       icon: Code,
       category: "Machine Learning",
@@ -48,31 +38,41 @@ export function ProjectsSection() {
       title: "ML Diabetes Health Indicator",
       description: "Machine learning model to predict diabetes risk using patient data with high accuracy and interpretable results.",
       technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Jupyter"],
-      github: "https://github.com/DaivikGirish/diabetes-prediction",
+      github: "https://github.com/DaivikGirish/ML-diabetes-health-indicator",
       demo: null,
       icon: Code,
       category: "Machine Learning",
       image: projectImages["diabetes-prediction"]
     },
     {
+      title: "IoT Temperature & Humidity Dashboard",
+      description: "Real-time monitoring system using ESP8266 and DHT22 sensors with web-based dashboard for data visualization and alerts.",
+      technologies: ["ESP8266", "DHT22", "Node.js", "React", "MongoDB", "WebSocket"],
+      github: "https://github.com/DaivikGirish/Arduino_Temperature-Humidity-sensor",
+      demo: null,
+      icon: Cpu,
+      category: "IoT & Embedded",
+      image: projectImages["iot-dashboard"]
+    },
+    {
+      title: "Java Servlet ATM System",
+      description: "Full-stack ATM banking system with secure authentication, transaction management, and real-time balance updates.",
+      technologies: ["Java", "Servlets", "JSP", "MySQL", "HTML/CSS", "JavaScript"],
+      github: "https://github.com/DaivikGirish/Java_Servlet_ATM",
+      demo: null,
+      icon: Database,
+      category: "Web Development",
+      image: projectImages["atm-system"]
+    },
+    {
       title: "Audio Noise Cancellation System",
       description: "Real-time audio processing system that filters out background noise using advanced signal processing algorithms.",
       technologies: ["Python", "NumPy", "SciPy", "Matplotlib", "Audio Processing", "FFT"],
-      github: "https://github.com/DaivikGirish/noise-cancellation",
+      github: "https://github.com/DaivikGirish/Audio_Noise_Cancellation",
       demo: null,
       icon: Code,
-      category: "Signal Processing",
+      category: "Embedded & Signal Processing",
       image: projectImages["noise-cancellation"]
-    },
-    {
-      title: "SAP CAPM Application",
-      description: "Enterprise-grade SAP Fiori application for business process management with responsive UI and backend integration.",
-      technologies: ["SAP UI5", "Fiori", "JavaScript", "OData", "SAP BTP", "ABAP"],
-      github: null,
-      demo: null,
-      icon: Database,
-      category: "Enterprise",
-      image: projectImages["sap-fiori"]
     }
   ]
 

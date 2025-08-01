@@ -11,53 +11,47 @@ export function SkillsSection() {
       ]
     },
     {
-      name: "Web Development",
+      name: "AI, ML & Signal Processing",
       skills: [
-        "HTML/CSS", "React", "Node.js", "Flask (Python)", "SAP UI5", "SAP Fiori", "RESTful APIs"
+        "Machine Learning", "PyTorch", "Computer Vision",
+        "FIR/IIR Filters", "Genetic Algorithms", "Signal Processing",
+        "Computational Intelligence", "Edge Optimization"
       ]
     },
     {
-      name: "Embedded Systems & Microcontrollers",
+      name: "Web, Cloud & Database Development",
       skills: [
-        "STM32 (F4 Series)", "STM32CubeIDE", "CMSIS-DSP", "Real-Time Processing", "Interrupts", "DMA", "ADC", "USART", "I2C", "SPI", "GPIO Handling", "Signal Acquisition"
+        "HTML/CSS", "React", "Node.js", "Flask (Python)", 
+        "SAP UI5", "SAP Fiori", "RESTful APIs", 
+        "SAP BTP", "AWS", "Google Cloud Platform (GCP)", 
+        "MySQL", "PostgreSQL", "MongoDB", "SQLite", "SQL"
       ]
     },
     {
-      name: "Microcontrollers & Hardware",
+      name: "Tools, Workflow & Practices",
       skills: [
-        "STM32F446RE", "ESP8266", "Raspberry Pi", "MAX9814", "DHT22"
+        "Git", "GitHub", "Jira", "Postman", "Jenkins",
+        "Logic Analyzers", "Debugging", "Agile Methodologies", 
+        "Unit Testing", "CI/CD"
       ]
     },
     {
-      name: "Databases",
+      name: "Embedded Systems & Hardware",
       skills: [
-        "MySQL", "SQL", "SQLite", "PostgreSQL", "MongoDB"
+        "STM32 (F4 Series)", "STM32CubeIDE", "CMSIS-DSP",
+        "Real-Time Processing", "Interrupts", "DMA", "ADC", 
+        "USART", "I2C", "SPI", "GPIO Handling", 
+        "ESP8266", "Raspberry Pi", "MAX9814", "DHT22", "ST-Link"
       ]
     },
     {
-      name: "Cloud Platforms & Integration",
+      name: "Connectivity & IoT",
       skills: [
-        "SAP BTP", "AWS", "Google Cloud Platform (GCP)", "Cloud Sync", "IoT Connectivity (MQTT, WiFi – ESP8266)", "USB/Serial Communication", "Data Logging"
+        "IoT Connectivity (MQTT, WiFi – ESP8266)",
+        "USB/Serial Communication", "Data Logging",
+        "Buffer Management", "Latency Optimization", "Power-Efficient Design"
       ]
-    },
-    {
-      name: "AI/ML & Signal Processing",
-      skills: [
-        "Machine Learning", "PyTorch", "Computer Vision", "CMSIS-DSP", "FIR/IIR Filters", "Genetic Algorithms", "Signal Processing", "Computational Intelligence", "Edge Optimization"
-      ]
-    },
-    {
-      name: "Tools & Version Control",
-      skills: [
-        "Git", "GitHub", "Jira", "Postman", "Jenkins", "ST-Link", "Logic Analyzers", "Debugging"
-      ]
-    },
-    {
-      name: "Development Practices",
-      skills: [
-        "Agile", "Unit Testing", "Buffer Management", "Latency Optimization", "Power-Efficient Design"
-      ]
-    }
+    }    
   ]
 
   return (

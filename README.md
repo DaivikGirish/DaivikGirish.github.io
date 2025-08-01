@@ -20,7 +20,7 @@ A modern, responsive, and professional personal portfolio website built with Nex
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
 - **Theme**: next-themes
-- **Deployment**: Vercel (recommended)
+- **Deployment**: Vercel
 
 ## 📋 Sections
 
