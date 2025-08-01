@@ -187,10 +187,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Email**: gdaivik@gmail.com (or use the contact form powered by EmailJS)
+- **Email**: daivikgirish98@gmail.com (or use the contact form powered by EmailJS)
 - **LinkedIn**: [Daivik Girish](https://linkedin.com/in/daivik-girish-709ab7185/)
 - **GitHub**: [DaivikGirish](https://github.com/DaivikGirish)
 
 ---
 
-Made with ❤️ using Next.js, TypeScript & Tailwind CSS 
